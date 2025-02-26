@@ -1,66 +1,209 @@
-<center>
-  <h1 style="font: 400 14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;color: #0d96c7;" ><a href="https://virtualflybrain.org">Virtual Fly Brain</a></h1><br />
-  <img src="https://fafb.catmaid.virtualflybrain.org/static/images/catmaidlogo.svg" onerror="this.onerror=null; this.src='https://fafb.catmaid.virtualflybrain.org/static/images/catmaidlogo.png';" width="6%">
-  <h2 style="font-family: Crimson Text, Georgia, serif;"><a href="http://catmaid.readthedocs.io">CATMAID</a></h2>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFB CATMAID Instances</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        }
 
+        h1 {
+            font: 400 14px/20px 'Helvetica Neue',Helvetica,Arial,sans-serif;
+            color: #0d96c7;
+            margin: 20px 0;
+        }
 
-<hr width="80%" />
-    
-    <div style="position: absolute;right: 20px;">
- <a href="https://fafb.catmaid.virtualflybrain.org/apis/">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" width="40%" /><br/>
-   FAFB API
-</a>   
+        h2 {
+            font-family: 'Crimson Text', Georgia, serif;
+            margin: 15px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .dataset-section {
+            margin: 40px 0;
+            position: relative;
+            padding: 20px;
+        }
+
+        .api-link {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            text-align: center;
+        }
+
+        .api-link img {
+            width: 40%;
+        }
+
+        hr {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .dataset-image {
+            margin: 10px 0;
+        }
+
+        .dataset-image img {
+            border-radius: 4px;
+        }
+
+        small {
+            display: block;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="https://virtualflybrain.org">Virtual Fly Brain</a></h1>
+        <img src="https://fafb.catmaid.virtualflybrain.org/static/images/catmaidlogo.svg" 
+             onerror="this.onerror=null; this.src='https://fafb.catmaid.virtualflybrain.org/static/images/catmaidlogo.png';" 
+             width="6%">
+        <h2><a href="http://catmaid.readthedocs.io">CATMAID</a></h2>
+
+        <hr/>
+
+        <!-- FAFB Section -->
+        <div class="dataset-section">
+            <div class="api-link">
+                <a href="https://fafb.catmaid.virtualflybrain.org/apis/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" alt="Swagger API"/>
+                    <div>FAFB API</div>
+                </a>
+            </div>
+            
+            <h2><a href="https://fafb.catmaid.virtualflybrain.org/?pid=1&zp=65720&yp=160350.0517811483&xp=487737.6942783438&tool=tracingtool&sid0=1&s0=3.1999999999999993&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22Published%22%7D%7D,%200.6)">Adult Brain (FAFB)</a></h2>
+            
+            <div class="dataset-image">
+                <a href="https://fafb.catmaid.virtualflybrain.org/?pid=1&zp=65720&yp=160350.0517811483&xp=487737.6942783438&tool=tracingtool&sid0=1&s0=3.1999999999999993&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22Published%22%7D%7D,%200.6)">
+                    <img src="http://VirtualFlyBrain.org/data/VFB/logos/DClogo300words.png" width="20%" />
+                </a>
+            </div>
+            
+            <small>
+                <a href="https://www.zoo.cam.ac.uk/research/groups/connectomics">https://www.zoo.cam.ac.uk/research/groups/connectomics</a>
+            </small>
+        </div>
+
+        <hr/>
+
+        <!-- L1EM Section -->
+        <div class="dataset-section">
+            <div class="api-link">
+                <a href="https://l1em.catmaid.virtualflybrain.org/apis/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" alt="Swagger API"/>
+                    <div>L1 API</div>
+                </a>
+            </div>
+            
+            <h2><a href="https://l1em.catmaid.virtualflybrain.org/?pid=1&zp=108250&yp=82961.59999999999&xp=54210.799999999996&tool=tracingtool&sid0=1&s0=2.4999999999999996&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22papers%22%7D%7D,%200.6)">L1 Larval CNS (L1EM)</a></h2>
+            
+            <div class="dataset-image">
+                <a href="https://l1em.catmaid.virtualflybrain.org/?pid=1&zp=108250&yp=82961.59999999999&xp=54210.799999999996&tool=tracingtool&sid0=1&s0=2.4999999999999996&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22papers%22%7D%7D,%200.6)">
+                    <img src="https://pbs.twimg.com/media/DNpy8l4X0AAsEFz.jpg" width="40%" />
+                </a>
+            </div>
+            
+            <small>
+                <a href="https://twitter.com/albertcardona">https://twitter.com/albertcardona</a>
+            </small>
+        </div>
+
+        <hr/>
+
+        <!-- FANC Section -->
+        <div class="dataset-section">
+            <div class="api-link">
+                <a href="https://fanc.catmaid.virtualflybrain.org/apis/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" alt="Swagger API"/>
+                    <div>FANC API</div>
+                </a>
+            </div>
+            
+            <h2><a href="https://fanc.catmaid.virtualflybrain.org/?pid=1&zp=55260&yp=512482.5999999994&xp=173092.19999999998&tool=tracingtool&sid0=1&s0=9&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22publication%22%7D%7D,%200.6)">Adult Ventral Nerve Cord (FANC)</a></h2>
+            
+            <div class="dataset-image">
+                <a href="https://fanc.catmaid.virtualflybrain.org/?pid=1&zp=55260&yp=512482.5999999994&xp=173092.19999999998&tool=tracingtool&sid0=1&s0=9&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22publication%22%7D%7D,%200.6)">
+                    <img src="https://flyemdev.mrc-lmb.cam.ac.uk/vnc1/2199/small.jpg" width="30%" />
+                </a>
+                <a href="https://fanc.catmaid.virtualflybrain.org/?pid=2&zp=71600&yp=316800&xp=164400&tool=tracingtool&sid0=3&s0=1&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22publication%22%7D%7D,%200.6)">
+                    <img src="https://vnc1.catmaid.virtualflybrain.org/data/EM/FANC/jrc2018-vnc-female-tiles-xy/179/small.jpg" width="15%" />
+                </a>
+            </div>
+            
+            <small>
+                <a href="https://www.lee.hms.harvard.edu/resources">https://www.lee.hms.harvard.edu/resources</a><br>
+                <a href="https://www.biorxiv.org/content/10.1101/2020.01.10.902478v1">Reference: Reconstruction of motor control circuits in adult Drosophila using automated transmission electron microscopy; Maniates-Selvin et al. 2020</a>
+            </small>
+        </div>
+
+        <hr/>
+
+        <!-- IAV-TNT Section -->
+        <div class="dataset-section">
+            <div class="api-link">
+                <a href="https://iav-tnt.catmaid.virtualflybrain.org/apis/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" alt="Swagger API"/>
+                    <div>IAV-TNT API</div>
+                </a>
+            </div>
+            
+            <h2><a href="https://iav-tnt.catmaid.virtualflybrain.org/">IAV Mechanosensory Circuit (IAV-TNT)</a></h2>
+            
+            <div class="dataset-image">
+                <a href="https://iav-tnt.catmaid.virtualflybrain.org/">
+                    <img src="https://fafb.catmaid.virtualflybrain.org/static/images/neuron-catalog-screenshot.png" width="40%" />
+                </a>
+            </div>
+            
+            <small>
+                <a href="https://doi.org/10.1016/j.neuron.2020.10.004">Reference: Valdes-Aleman J, et al. (2021). Comparative Connectomics Reveals How Partner Identity, Location, and Activity Specify Synaptic Connectivity in the Drosophila Motor System</a>
+            </small>
+        </div>
+
+        <hr/>
+
+        <!-- IAV-ROBO Section -->
+        <div class="dataset-section">
+            <div class="api-link">
+                <a href="https://iav-robo.catmaid.virtualflybrain.org/apis/">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" alt="Swagger API"/>
+                    <div>IAV-ROBO API</div>
+                </a>
+            </div>
+            
+            <h2><a href="https://iav-robo.catmaid.virtualflybrain.org/">IAV-ROBO CATMAID</a></h2>
+            
+            <div class="dataset-image">
+                <a href="https://iav-robo.catmaid.virtualflybrain.org/">
+                    <img src="https://fafb.catmaid.virtualflybrain.org/static/images/neuron-catalog-screenshot.png" width="40%" />
+                </a>
+            </div>
+            
+            <small>
+                <a href="https://www.cell.com/neuron/fulltext/S0896-6273(20)30852-8">Reference: Valdes-Aleman et al. (2021)</a>
+            </small>
+        </div>
+
+        <hr/>
     </div>
-    
-    <h2><a href="https://fafb.catmaid.virtualflybrain.org/?pid=1&zp=65720&yp=160350.0517811483&xp=487737.6942783438&tool=tracingtool&sid0=1&s0=3.1999999999999993&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22Published%22%7D%7D,%200.6)">Adult Brain (FAFB)</a></h2><br/>
-<a href="https://fafb.catmaid.virtualflybrain.org/?pid=1&zp=65720&yp=160350.0517811483&xp=487737.6942783438&tool=tracingtool&sid0=1&s0=3.1999999999999993&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22Published%22%7D%7D,%200.6)">
-  <img src="http://VirtualFlyBrain.org/data/VFB/logos/DClogo300words.png" width="20%" />
-</a><br />
-<small>
-  <a href="https://www.zoo.cam.ac.uk/research/groups/connectomics">https://www.zoo.cam.ac.uk/research/groups/connectomics</a>
-</small>
-
-    
-    
-<hr width="80%" />
-    
-    <div style="position: absolute;right: 20px;">
- <a href="https://l1em.catmaid.virtualflybrain.org/apis/">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" width="40%" /><br/>
-   L1 API
-</a>   
-    </div>
-    
-<h2><a href="https://l1em.catmaid.virtualflybrain.org/?pid=1&zp=108250&yp=82961.59999999999&xp=54210.799999999996&tool=tracingtool&sid0=1&s0=2.4999999999999996&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22papers%22%7D%7D,%200.6)">L1 Larval CNS (L1EM)</a></h2><br/>
-<a href="https://l1em.catmaid.virtualflybrain.org/?pid=1&zp=108250&yp=82961.59999999999&xp=54210.799999999996&tool=tracingtool&sid0=1&s0=2.4999999999999996&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22papers%22%7D%7D,%200.6)">
-  <img src="https://pbs.twimg.com/media/DNpy8l4X0AAsEFz.jpg" width="40%" />
-</a><br />
-<small>
-  <a href="https://twitter.com/albertcardona">https://twitter.com/albertcardona</a>
-</small>
-    
-<hr width="80%" />
-    
-    <div style="position: absolute;right: 20px;">
- <a href="https://fanc.catmaid.virtualflybrain.org/apis/">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Swagger-logo.png" width="40%" /><br/>
-   FANC API
-</a>   
-    </div>
-    
-<h2><a href="https://fanc.catmaid.virtualflybrain.org/?pid=1&zp=55260&yp=512482.5999999994&xp=173092.19999999998&tool=tracingtool&sid0=1&s0=9&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22publication%22%7D%7D,%200.6)">Adult Ventral Nerve Cord (FANC)</a></h2><br/>
-<a href="https://fanc.catmaid.virtualflybrain.org/?pid=1&zp=55260&yp=512482.5999999994&xp=173092.19999999998&tool=tracingtool&sid0=1&s0=9&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22publication%22%7D%7D,%200.6)">
-  <img src="https://flyemdev.mrc-lmb.cam.ac.uk/vnc1/2199/small.jpg" width="30%" />
-</a>
-<a href="https://fanc.catmaid.virtualflybrain.org/?pid=2&zp=71600&yp=316800&xp=164400&tool=tracingtool&sid0=3&s0=1&help=true&layout=h(XY,%20%7B%20type:%20%22neuron-search%22,%20id:%20%22neuron-search-1%22,%20options:%20%7B%22annotation-name%22:%20%22publication%22%7D%7D,%200.6)">
-  <img src="https://vnc1.catmaid.virtualflybrain.org/data/EM/FANC/jrc2018-vnc-female-tiles-xy/179/small.jpg" width="15%" />
-</a>
-  <br />
-<small>
-  <a href="https://www.lee.hms.harvard.edu/resources">https://www.lee.hms.harvard.edu/resources</a><br>
-  <a href="https://www.biorxiv.org/content/10.1101/2020.01.10.902478v1">Reference: Reconstruction of motor control circuits in adult Drosophila using automated transmission electron microscopy; Maniates-Selvin et al. 2020</a>
-</small>    
-
-<hr width="80%" />
-</center>
+</body>
+</html>
